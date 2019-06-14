@@ -1,35 +1,39 @@
 $(document).ready(function(){
 
-  var sounds = []; //Array
+  var sounds = [];
 
   sounds["65"] = 'https://instaud.io/_/3Oaj.wav';
   sounds["68"] = 'https://instaud.io/_/3Oal.wav';
   sounds["79"] = 'https://instaud.io/_/3OaS.wav';
 
 
-
   document.addEventListener('keydown', function (evt) {
-  console.log(evt.keyCode);
-
-
-
-
     var Sound = new Audio();
-    //Sound.loop = true;
     Sound.src = sounds[evt.keyCode];
     Sound.play();
 
-
-
-    animateLabel(evt.keyCode, Sound);
-
-});
-
+  });
 });
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+  animateLabel(evt.keyCode, Sound);
 function animateLabel(key, Sound){
 
 
@@ -55,7 +59,7 @@ function animateLabel(key, Sound){
 
 
 //Slider range functions
-/*
+
 var minVolume = 0;
 var maxVolume = 10;
 valueVolume = 6;
