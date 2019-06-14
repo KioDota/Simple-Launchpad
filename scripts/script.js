@@ -18,15 +18,18 @@ document.addEventListener('keydown', function (evt) {
                     this.play();
                 }, false);
             }
-            
             Kick1.play();
             break;
 
-        case 68: //keyCo    de for D
+        case 83:  //keyCode for S
+            Kick1.pause();
+            break;
+
+        case 68: //keyCode for D
             Snare1.play();
             break;
 
-        case 79: //keyCod for O
+        case 79: //keyCode for O
             HiHat1.play();
             break;
     }
